@@ -19,6 +19,7 @@ function App() {
       <div className="min-h-screen bg-gray-50">
         <Routes>
           <Route path="/" element={<Dashboard />} />
+          <Route path="/dashboard" element={<Navigate to="/" replace />} />
           <Route path="/team-info" element={<TeamInfo />} />
           <Route
             path="/player-one"
